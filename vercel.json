@@ -3,20 +3,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "cmd": "npm run build:web",
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "use": "@vercel/static-build"
     }
   ],
   "outputDirectory": "dist"
